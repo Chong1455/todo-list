@@ -1,3 +1,44 @@
+body {
+	font: 'Raleway', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    top: 15%;
+	background: linear-gradient(to right, rgb(221, 11, 184), rgb(112, 145, 194)); /* Standard syntax */
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h2 {
+	font: 1200 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+#userinput {
+	margin-left: 20px;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+    font: bold 0.9em Quicksand, sans-serif;
+    /*background-color: #ffffff;*/
+    border: none;
+    cursor: pointer;
+}
+
 .done {
   text-decoration: line-through;
 }

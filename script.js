@@ -27,6 +27,7 @@ function inputlength() {
 
 function createListElement() {
 	var btn = document.createElement("button");
+	btn.className = "btn btn-danger";
 	btn.innerHTML = "Delete";
 	// btn.onclick = removeParent;
 	btn.addEventListener("click", removeParent);
