@@ -1,46 +1,77 @@
 body {
-	font: 'Raleway', sans-serif;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: .3em;
-    top: 15%;
-	background: linear-gradient(to right, rgb(221, 11, 184), rgb(112, 145, 194)); /* Standard syntax */
+  font-family: "Roboto", sans-serif;
+  background: #16bffd;
+  background: -webkit-linear-gradient(to right, #16bffd, #cb3066);
+  background: linear-gradient(to right, #16bffd, #cb3066);
+}
+
+#container {
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font: 600 3.5em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    margin-top: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    width: 100%;
-}
-
-h2 {
-	font: 1200 1em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: none;
-    letter-spacing: 0.01em;
-}
-
-#userinput {
-	margin-left: 20px;
+  background: #2980b9;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 button {
-    width: 70px;
-    height: 40px;
-    margin: 10px;
-    font: bold 0.9em Quicksand, sans-serif;
-    /*background-color: #ffffff;*/
-    border: none;
-    cursor: pointer;
+  width: 70px;
+  height: 40px;
+  margin: 10px;
+  font: bold 0.9em Quicksand, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  font-size: 18px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  color: #2980b9;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  background: #e74c3c;
+  height: 30px;
+  margin-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li {
+  background: white;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+
+li:hover .box {
+  width: 40px;
+  opacity: 1;
 }
 
 .done {
   text-decoration: line-through;
 }
-
-/*https://codepen.io/rafaelcastrocouto/pen/BNdOab?q=cool+css+title&limit=all&type=type-pens*/

@@ -26,26 +26,18 @@ function inputlength() {
 }
 
 function createListElement() {
-	var btn = document.createElement("button");
-	btn.className = "btn btn-danger";
-	btn.innerHTML = "Delete";
+	var btn = document.createElement("i");
+	btn.className = "delete fas fa-trash-alt box";
 	// btn.onclick = removeParent;
 	btn.addEventListener("click", removeParent);
 
 	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
-	li.innerHTML = li.innerHTML + " ";
 	li.appendChild(btn);
-
+	li.appendChild(document.createTextNode(input.value));
+	
 	ul.appendChild(li);
 	input.value = "";
-}
-
-function addListAfterClick() {
-	if (inputlength() > 0) {
-		createListElement();
-	}
-}
+}	
 
 function addListAfterKeypress(event) {
 	if (inputlength() > 0 && event.keyCode === 13) {
@@ -53,6 +45,5 @@ function addListAfterKeypress(event) {
 	}
 }
 
-button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
 ul.addEventListener("click", strikeThrough);
