@@ -26,15 +26,27 @@ function inputlength() {
 }
 
 function createListElement() {
-	var btn = document.createElement("i");
-	btn.className = "delete fas fa-trash-alt box";
-	// btn.onclick = removeParent;
-	btn.addEventListener("click", removeParent);
+	// var deleteIcon = document.createElement("i");
+	// btn.className = "delete fas fa-trash-alt box";
+	// // btn.onclick = removeParent;
+	// btn.addEventListener("click", removeParent);
 
-	var li = document.createElement("li");
-	li.appendChild(btn);
-	li.appendChild(document.createTextNode(input.value));
+	// var li = document.createElement("li");
+	// li.appendChild(btn);
+	// li.appendChild(document.createTextNode(input.value));
 	
+	// ul.appendChild(li);
+	// input.value = "";
+
+    // create delete icon button
+    var deleteIcon = document.createElement("img");
+    deleteIcon.classList.add("delete"); 
+    deleteIcon.addEventListener("click", removeParent);    
+    deleteIcon.src = "./delete.png";
+
+    var li = document.createElement("li");
+    li.appendChild(deleteIcon);
+    li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
 }	

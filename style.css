@@ -47,18 +47,6 @@ ul {
   padding: 0;
 }
 
-.box {
-  background: #e74c3c;
-  height: 30px;
-  margin-right: 20px;
-  padding-top: 10px;
-  text-align: center;
-  color: white;
-  width: 0px;
-  display: inline-block;
-  transition: 0.2s linear;
-  opacity: 0;
-}
 
 li {
   background: white;
@@ -67,11 +55,15 @@ li {
   color: #666;
 }
 
-li:hover .box {
-  width: 40px;
-  opacity: 1;
-}
-
 .done {
   text-decoration: line-through;
+}
+
+li img {
+  height: 15px;
+  margin: 0 7px;
+}
+
+li img:hover {
+  cursor: pointer;
 }
